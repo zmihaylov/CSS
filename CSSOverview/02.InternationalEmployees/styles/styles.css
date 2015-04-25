@@ -1,0 +1,64 @@
+﻿body {
+    font-size: 18px;
+    font-family: ans-serif;
+}
+
+table {
+    text-align: left;
+    border-collapse: collapse;
+    border-style: none;
+    width: 32em;
+}
+
+td, th {
+    padding: 5px;
+}
+
+th {
+    border-right: 2px inset #d5d4d4;
+    border-bottom: 2px inset #d5d4d4;
+    background-color: #55b806;
+    font-weight: normal;
+    color: #FFF;
+}
+
+td {
+    border-right: 2px inset #f3f3f3;
+}
+
+img {
+    padding: 5px;
+    vertical-align: middle;
+}
+
+col.name {
+    width: 25%;
+}
+
+col.city {
+    width: 25%;
+}
+
+col.country {
+    width: 25%;
+}
+
+col.promoted {
+    width: 25%;
+}
+
+table tr:nth-child(even) {
+    background-color: #ececd8;
+}
+
+table td:nth-child(4n) {
+    border-right: none;
+}
+
+table th:nth-child(4n) {
+    border-right: none;
+}
+
+table tr:nth-child(4n) {
+    border-bottom: 2px inset #d5d4d4;
+}

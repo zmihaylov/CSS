@@ -1,0 +1,47 @@
+﻿table {
+    background-color: #808080;
+    font-family: Arial;
+    font-size: 16px;
+}
+
+thead {
+    font-size: 1.4em;
+    font-style: normal;
+    color: #acb1aa;
+}
+
+a {
+    color: #f3f6ac;
+    text-decoration: none;
+}
+
+td {
+    padding: 5px;
+    color: #ccc;
+}
+
+    td.status {
+        color: orange;
+    }
+
+    td.size, td.info {
+        font-size: 0.8em;
+    }
+
+    td.info {
+        font-style: italic;
+        color: #fff;
+        text-align: start;
+        vertical-align: top;
+    }
+
+span.disk {
+    border-radius: 50%;
+    width: 1px;
+    height: 1px;
+    background-color: #44a744;
+}
+
+span.alert {
+    color: red;
+}
