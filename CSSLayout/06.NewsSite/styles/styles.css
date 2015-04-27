@@ -1,0 +1,115 @@
+﻿body, h1, ul, li {
+    margin: 0;
+    padding: 0;
+    font-family: Arial,sans-serif;
+    font-weight: normal;
+    font-size: 13px;
+}
+
+ul, li {
+    list-style: none;
+}
+
+body {
+    background-color: black;
+}
+
+img {
+    border: none;
+    width: 450px;
+    height: 290px;
+}
+
+a {
+    color: #A5AFB3;
+    text-decoration: none;
+}
+
+
+#container {
+    width:690px;
+    min-height:365px;
+    margin: 100px auto 0 auto;
+    background: #1e3741;
+    border: 1px solid #337d8f;
+    border-radius: 8px;
+    padding-bottom: 10px;
+    position: relative;
+    overflow:hidden;
+}
+
+.nav {
+    float:left;
+}
+
+.nav-title a {
+    display:block;
+    padding: 5px 15px;
+    background: #4B5F67;
+    color: #93ACB6;
+    position: relative;
+    z-index: 1;
+}
+
+.nav:not(:last-child) .nav-title a { 
+    border-right: 1px solid #1E3741; 
+}
+
+.nav:first-child .nav-title a::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 598px;
+    height: 100%;
+    content: " ";
+}
+
+.nav-content {
+    top: 28px;
+    left: 0;
+    width: 100%;
+}
+
+.nav-item img {
+    top: 0;
+    right: 0;
+    -webkit-transition: opacity 333ms ease-out;
+        -moz-transition: opacity 333ms ease-out;
+            -o-transition: opacity 333ms ease-out;
+            transition: opacity 333ms ease-out;
+}
+
+.nav-content, .nav-item img {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+
+.nav-item a {
+    display: block;
+    padding: 5px 10px;
+    width: 180px;
+}
+.nav-item:not(:last-child) a { border-bottom: 1px solid #3A4F58; }
+
+
+#container:not(:hover) .nav:first-child .nav-title a, .nav:hover .nav-title a {
+    background: transparent;
+    color: #fff;
+}
+
+
+#container:not(:hover) .nav-item:first-child a, .nav-item:hover a,
+.nav-title:hover ~ .nav-content .nav-item:first-child a {
+    background: #00968C;
+    color: #fff;
+}
+
+
+#container:not(:hover) .nav-item:first-child img, .nav-item:hover img,
+.nav-title:hover ~ .nav-content .nav-item:first-child img,
+.navs:not(:hover) .nav:first-child .nav-content, .nav:hover .nav-content {
+    z-index: 1;
+    opacity: 1;
+}

@@ -1,0 +1,114 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <link href="styles/styles.css" rel="stylesheet" />
+    <script src="http://code.angularjs.org/angular-0.10.4.min.js" ng:autobind></script>
+</head>
+<body>
+    <div id="container">
+        <nav>
+            <ul>
+                <li><a href="http://www.apple.com">Apple</a></li>
+                <li><a href="http://www.toshiba.com">Toshiba</a></li>
+                <li><a href="http://www.lenovo.com">Lenovo</a></li>
+                <li><a href="http://www.dell.com">Dell</a></li>
+                <li><a href="http://www.asus.com">Asus</a></li>
+                <li><a href="http://www.hacer.com">Hacer</a></li>
+                <li><a href="http://www.hp.com">HP</a></li>
+            </ul>
+            <hr />
+        </nav>
+        <aside>
+            <div>
+                <p>Min price&#58; {{ minPrice }} USD</p>
+                <p>
+                    <input type="range" min="250" max="750" value="500" step="50" ng:model="minPrice" />
+                </p>
+            </div>
+            <div>
+                <p> Max price&#58; {{ maxPrice }} USD</p>
+                <p>
+                    <input type="range" min="1000" max="2000" value="1500" step="100" ng:model="maxPrice" />
+                </p>
+            </div>
+            <div>
+                <p>Min <span>ram</span>&#58; {{ maxRam }} GB</p>
+                <p>
+                    <input type="range" min="2" max="8" value="4" step="1" ng:model="maxRam" />
+                </p>
+            </div>
+            <div>
+                <p>Max <span>ram</span>&#58; {{ minRam }} GB</p>
+                <p>
+                    <input type="range" min="8" max="32" value="16" step="4" ng:model="minRam" />
+                </p>
+            </div>
+        </aside>
+        <section>
+            <form name="laptops" method="post" action="#">
+                <div>
+                    <fieldset>
+                        <legend>Apple MacBook Air</legend>
+                        <img src="images/laptop.png" />
+                        <p class="upper">64gb ssd</p>
+                        <p class="upper">2gb ddr</p>
+                        <span>Intel Core i5</span>
+                        <p class="upper">1300 usd</p>
+                    </fieldset>
+                </div>
+                <div>
+                    <fieldset>
+                        <legend>Apple MacBook Air</legend>
+                        <img src="images/laptop.png" />
+                        <p class="upper">64gb ssd</p>
+                        <p class="upper">2gb ddr</p>
+                        <span>Intel Core i5</span>
+                        <p class="upper">1300 usd</p>
+                    </fieldset>
+                </div>
+                <div>
+                    <fieldset>
+                        <legend>Apple MacBook Air</legend>
+                        <img src="images/laptop.png" />
+                        <p class="upper">64gb ssd</p>
+                        <p class="upper">2gb ddr</p>
+                        <span>Intel Core i5</span>
+                        <p class="upper">1300 usd</p>
+                    </fieldset>
+                </div>
+                <div>
+                    <fieldset>
+                        <legend>Apple MacBook Air</legend>
+                        <img src="images/laptop.png" />
+                        <p class="upper">64gb ssd</p>
+                        <p class="upper">2gb ddr</p>
+                        <span>Intel Core i5</span>
+                        <p class="upper">1300 usd</p>
+                    </fieldset>
+                </div>
+                <div>
+                    <fieldset>
+                        <legend>Apple MacBook Air</legend>
+                        <img src="images/laptop.png" />
+                        <p class="upper">64gb ssd</p>
+                        <p class="upper">2gb ddr</p>
+                        <span>Intel Core i5</span>
+                        <p class="upper">1300 usd</p>
+                    </fieldset>
+                </div>
+                <div>
+                    <fieldset>
+                        <legend>Apple MacBook Air</legend>
+                        <img src="images/laptop.png" />
+                        <p class="upper">64gb ssd</p>
+                        <p class="upper">2gb ddr</p>
+                        <span>Intel Core i5</span>
+                        <p class="upper">1300 usd</p>
+                    </fieldset>
+                </div>
+            </form>
+        </section>
+    </div>
+</body>
+</html>
